@@ -13,7 +13,6 @@ const port = process.env.PORT || 3000;
 connectDB()
   .then(() => {
     app.listen(port, () => {
-      console.log(process.env.MONGO_URI)
       console.log(`Example app listening on port http://localhost:${port}`);
     });
   })
